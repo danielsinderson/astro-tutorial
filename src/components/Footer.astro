@@ -1,0 +1,25 @@
+---
+import Social from "../components/Social.astro";
+
+const platform = "github";
+const github = "https://www.github.com/danielsinderson";
+const linkedin = "https://www.linkedin.com/in/daniel-sinderson-72695676/";
+const hackster = "https://www.hackster.io/danielsinderson";
+---
+
+<footer>
+    <p>
+        Learn more about me and my projects on
+        <Social platform="Github" username="danielsinderson" />,
+        <a href={`${linkedin}`}>LinkedIn</a>, and
+        <a href={`${hackster}`}>Hackster</a>.
+    </p>
+</footer>
+
+<style>
+    footer {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+</style>
